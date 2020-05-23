@@ -47,6 +47,8 @@ from ..utils.config import read_config_file, parse_anchor_parameters
 from ..utils.keras_version import check_keras_version
 from ..utils.model import freeze as freeze_model
 from ..utils.transform import random_transform_generator
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 
 def makedirs(path):
